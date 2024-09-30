@@ -1,17 +1,13 @@
 #!/bin/bash
 
-# Define variables
 FILE_NAME="realmadrid.png"
 BUCKET_NAME="ds2022-vzu3vu"
 
-# Upload the file to the S3 bucket
 aws s3 cp "$FILE_NAME" "s3://$BUCKET_NAME/"
 
-# Check if the upload was successful
 if [ $? -eq 0 ]; then
     echo "File uploaded successfully."
 
-    # Generate a presigned URL for the uploaded file
     PRESIGNED_URL=$(aws s3 presign s3://ds2022-vzu3vu/realmadrid.png --expires-in 604800)
 
     echo "Presigned URL (expires in 7 days): $PRESIGNED_URL"

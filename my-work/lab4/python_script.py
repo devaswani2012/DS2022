@@ -31,5 +31,4 @@ print(f'Presigned URL (expires in 7 days): {presigned_url}')
 
 os.remove(file_name)
 
-# 
-https://ds2022-vzu3vu.s3.amazonaws.com/downloaded_file.gif?AWSAccessKeyId=AKIAX2DZEIRCDTQKYXN7&Signature=lUQ%2Fn0UIQlT2cd1puFkBcUoNlOQ%3D&Expires=1728334494
+# https://ds2022-vzu3vu.s3.amazonaws.com/downloaded_file.gif?AWSAccessKeyId=AKIAX2DZEIRCDTQKYXN7&Signature=lUQ%2Fn0UIQlT2cd1puFkBcUoNlOQ%3D&Expires=1728334494
